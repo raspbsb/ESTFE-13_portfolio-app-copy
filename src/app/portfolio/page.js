@@ -3,9 +3,9 @@ import { createClient } from "../utils/supabase/client";
 import Link from "next/link";
 
 export default async function Portfolio({ params }) {
-  const params = await searchParams;
-  const page = Number(params.page ?? 1);
-  console.log(params);
+  const pages = await params;
+  const page = Number(pages.page ?? 1);
+  console.log(pages);
 
   const supabase = createClient();
   //페이지네이션 설정
