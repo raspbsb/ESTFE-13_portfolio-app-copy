@@ -1,4 +1,4 @@
-import { createClient } from "@supabase/supabase-js/dist/index.cjs";
+import { createClient } from "@/app/utils/supabase/client";
 import Image from "next/image";
 
 export async function generateStaticParams() {
