@@ -2,7 +2,7 @@ import Image from "next/image";
 import { createClient } from "../utils/supabase/client";
 import Link from "next/link";
 
-export default async function Portfolio({ searchParams }) {
+export default async function Portfolio({ params }) {
   const params = await searchParams;
   const page = Number(params.page ?? 1);
   console.log(params);
